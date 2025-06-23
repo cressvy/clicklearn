@@ -1,13 +1,27 @@
 clicklearn/
 ├── backend/
-│   ├── main.py              # FastAPI app
-│   ├── requirements.txt     # Python deps (FastAPI, OpenAI, etc.)
-│   └── .env                 # API keys
+│   ├── app/
+│   │   ├── models/         # Pydantic request/response models
+│   │   ├── routes/         # FastAPI route definitions
+│   │   ├── services/       # Business logic (AIService, etc.)
+│   │   └── utils/          # Utility functions (future use)
+│   ├── tests/              # Backend tests
+│   ├── requirements.txt    # Python dependencies
+│   ├── main.py             # Entrypoint (legacy, now just imports app.main)
+│   ├── env.example         # Example backend environment variables
+│   └── test_api.py         # Simple script to test AIService
 ├── frontend/
-│   ├── index.html
-│   ├── package.json
-│   └── src/
-│       ├── App.jsx
-│       ├── components/
-│       └── styles/
+│   ├── src/
+│   │   ├── components/     # Reusable React components
+│   │   ├── hooks/          # Custom React hooks
+│   │   ├── services/       # API service layer
+│   │   ├── utils/          # Utility functions (future use)
+│   │   └── styles/         # CSS and styling
+│   ├── package.json        # Node dependencies
+│   ├── vite.config.js      # Vite config (with proxy)
+│   ├── env.example         # Example frontend environment variables
+│   └── ...                 # Other config files
+├── scripts/
+│   └── dev.sh              # Script to start both frontend and backend
+├── .gitignore
 └── README.md
