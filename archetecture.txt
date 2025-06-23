@@ -1,0 +1,13 @@
+clicklearn/
+├── backend/
+│   ├── main.py              # FastAPI app
+│   ├── requirements.txt     # Python deps (FastAPI, OpenAI, etc.)
+│   └── .env                 # API keys
+├── frontend/
+│   ├── index.html
+│   ├── package.json
+│   └── src/
+│       ├── App.jsx
+│       ├── components/
+│       └── styles/
+└── README.md
